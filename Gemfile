@@ -4,8 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.2'
 
 group :development do
-  gem "rubocop", "~> 1.7"
   gem 'pry'
+  gem 'rubocop', '~> 1.7'
 end
 
 group :development, :test do

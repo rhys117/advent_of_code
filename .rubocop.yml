@@ -1,13 +1,33 @@
 AllCops:
-  TargetRubyVersion: 2.4
-
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
+  TargetRubyVersion: 2.7
+  Exclude:
+    - spec/spec_helper.rb
 
 Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
 
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
 Layout/LineLength:
   Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/*.rb
+    - spec/*/**.rb
+
+Style/BlockDelimiters:
+  Exclude:
+    - spec/*.rb
+    - spec/*/**.rb

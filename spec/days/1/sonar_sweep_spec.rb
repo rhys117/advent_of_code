@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe AdventOfCode::Day1 do
+RSpec.describe SonarSweep do
   describe '#depths_increased' do
     it 'should return example case correctly' do
       expect(
