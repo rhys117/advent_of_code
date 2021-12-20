@@ -10,7 +10,9 @@ class SonarSweep
 
       next unless windowed_sum(
         index: count,
-        continually_count: continually_count) > windowed_sum(index: count - 1,
+        continually_count: continually_count
+      ) > windowed_sum(
+        index: count - 1,
         continually_count: continually_count
       )
 
